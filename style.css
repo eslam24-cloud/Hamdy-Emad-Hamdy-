@@ -1,0 +1,141 @@
+/* ضبط التنسيق العام لجميع العناصر (مفضل) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. تنسيق الخلفية والخط (Bg.jpeg) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; 
+    background-image: url('Bg.jpeg'); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-attachment: fixed; 
+    color: #333; 
+    padding: 20px;
+    text-align: right; 
+}
+
+/* 2. تنسيق منطقة المحتوى (تم تعديل الشفافية إلى 0.75) */
+.article-content {
+    max-width: 900px;
+    margin: 50px auto; 
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.75); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* تنسيق الجزء التعريفي (تم تعديل الشفافية إلى 0.85) */
+.intro-section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgba(230, 240, 255, 0.85); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.institute-logo {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.intro-section p {
+    margin-bottom: 5px;
+}
+
+/* 3. تنسيق العناوين (الألوان المتناسقة) */
+.article-content h1 {
+    font-weight: bold;
+    color: #1A4B7D; 
+    font-size: 2.2em;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #ccc;
+    text-align: center;
+}
+
+.article-content h2, 
+.article-content h3 {
+    font-weight: bold;
+    color: #0096C7; 
+    font-size: 1.6em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.article-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+/* 4. تنسيق الصور */
+.content-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 70%;
+    height: auto;
+    border: 3px solid #0096C7; 
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 5. تنسيق القوائم والروابط */
+.summary-list, .references-list {
+    list-style-type: none;
+    padding-right: 25px;
+}
+
+.summary-list li::before {
+    content: "•";
+    color: #0096C7; 
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-right: -1em;
+}
+
+.summary-list li {
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.references-list a,
+.intro-section a { 
+    color: #0096C7;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.references-list a:hover,
+.intro-section a:hover {
+    color: #ff0000; 
+    text-decoration: underline;
+}
+
+/* ********** التجاوب (RESPONSIVENESS) للموبايل ********** */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .article-content, .intro-section {
+        margin: 10px auto;
+        padding: 20px 15px;
+        border-radius: 0; 
+    }
+    .article-content h1 {
+        font-size: 1.6em;
+    }
+    .article-content h2 {
+        font-size: 1.3em;
+    }
+    .content-image {
+        max-width: 100%;
+    }
+}
