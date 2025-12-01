@@ -5,11 +5,12 @@
     padding: 0;
 }
 
-/* 1. تنسيق الخلفية والخط (Bg.jpeg) */
+/* 1. تنسيق الخلفية والخط (bg.jpeg) - تم إصلاح مسار الملف هنا */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9; 
-    background-image: url('Bg.jpeg'); 
+    /* تم التعديل هنا: حرف 'b' صغير ليتطابق مع اسم الملف المرفوع 'bg.jpeg' */
+    background-image: url('bg.jpeg'); 
     background-repeat: no-repeat;
     background-size: 100% 100%; 
     background-attachment: fixed; 
@@ -18,7 +19,7 @@ body {
     text-align: right; 
 }
 
-/* 2. تنسيق منطقة المحتوى (تم تعديل الشفافية إلى 0.75) */
+/* 2. تنسيق منطقة المحتوى (شفافية 0.75) */
 .article-content {
     max-width: 900px;
     margin: 50px auto; 
@@ -28,7 +29,7 @@ body {
     border-radius: 10px;
 }
 
-/* تنسيق الجزء التعريفي (تم تعديل الشفافية إلى 0.85) */
+/* تنسيق الجزء التعريفي (شفافية 0.85) */
 .intro-section {
     max-width: 900px;
     margin: 20px auto;
@@ -49,7 +50,7 @@ body {
     margin-bottom: 5px;
 }
 
-/* 3. تنسيق العناوين (الألوان المتناسقة) */
+/* 3. تنسيق العناوين */
 .article-content h1 {
     font-weight: bold;
     color: #1A4B7D; 
